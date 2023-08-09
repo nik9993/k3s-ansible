@@ -2,6 +2,7 @@
 - name: Reset k3s cluster
   hosts: k3s_cluster
   gather_facts: yes
+  remote_user: ubuntu
   roles:
     - role: reset
       become: true
